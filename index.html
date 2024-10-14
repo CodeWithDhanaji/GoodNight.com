@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Night Shayari</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            overflow: hidden; /* Prevents overflow on small screens */
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeIn 4s ease-in-out infinite;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 20px;
+            animation: fadeIn 4s ease-in-out infinite;
+            line-height: 1.5; /* Better spacing between lines */
+        }
+
+        @keyframes fadeIn {
+            0%, 100% {
+                color: transparent;
+                text-shadow: none;
+            }
+            50% {
+                color: white;
+                text-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12;
+            }
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            animation: twinkling 3s infinite ease-in-out;
+        }
+
+        @keyframes twinkling {
+            from { background-position: 0 0; }
+            to { background-position: 100% 100%; }
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3rem; /* Slightly smaller font for mobile */
+            }
+            p {
+                font-size: 1.2rem; /* Slightly smaller font for mobile */
+                margin: 10px; /* Adjust margins for better fit */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div>
+        <h1>Good Night</h1>
+        <p>
+            चाँद की चाँदनी रात में,<br>
+            ख़्वाबों की महक बिखेर दो,<br>
+            जब तुम सो जाओ, तो समझो,<br>
+            अलविदा मेरे ख़्वाबों को, धीरे से नज़र से उतार दो।
+        </p>
+    </div>
+</body>
+</html>
